@@ -1,4 +1,4 @@
-package it.alfasoft.martina;
+package it.alfasoft.francesca;
 
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;

@@ -1,4 +1,4 @@
-package it.alfasoft.martina;
+package it.alfasoft.francesca;
 
 import java.io.Serializable;
 import javax.ejb.LocalBean;

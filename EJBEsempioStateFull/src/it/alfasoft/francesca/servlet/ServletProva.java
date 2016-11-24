@@ -1,6 +1,6 @@
-package it.alfasoft.martina.servlet;
+package it.alfasoft.francesca.servlet;
 
-import it.alfasoft.martina.IContatoreLocale;
+import it.alfasoft.francesca.IContatoreLocale;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,20 +13,25 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Servlet2
+ * Servlet implementation class ServletProva
  */
-@WebServlet("/test2")
-public class Servlet2 extends HttpServlet {
+@WebServlet("/test")
+public class ServletProva extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+	
 	@EJB
 	private IContatoreLocale cntBean;
+	
+	@EJB
+	private IContatoreLocale cntBean2;
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		PrintWriter writer = response.getWriter();
-		writer.println("Ciao "+cntBean.incrementa());
+		writer.println("Primo: "+cntBean.incrementa());
+		writer.println("Secondo: "+cntBean2.incrementa());
 		
 		
 	}
+
 }

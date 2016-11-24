@@ -1,12 +1,12 @@
-package it.alfasoft.martina;
+package it.alfasoft.francesca;
 
-import javax.ejb.Stateless;
+import javax.ejb.Stateful;
+
 
 /**
  * Session Bean implementation class Contatore
  */
-@Stateless
-
+@Stateful
 public class Contatore implements IContatoreLocale{
 
    /**
